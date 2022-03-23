@@ -5,6 +5,6 @@ namespace Italbytz.Ports.Exam.Networks
 {
     public interface IMinimumSpanningTreeSolution
     {
-        IEnumerable<ITagged<string>> Edges { get; set; }
+        IEnumerable<ITaggedEdge<string,double>> Edges { get; set; }
     }
 }
