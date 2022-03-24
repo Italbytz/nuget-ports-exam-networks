@@ -9,5 +9,6 @@ namespace Italbytz.Ports.Exam.Networks
     /// <typeparam name="TEdge">Edge type.</typeparam>
     public interface IUndirectedGraph<TVertex, TEdge> : IEdgeSet<TVertex, TEdge> where TEdge : IEdge<TVertex>
     {
+        string ToGraphviz();
     }
 }
