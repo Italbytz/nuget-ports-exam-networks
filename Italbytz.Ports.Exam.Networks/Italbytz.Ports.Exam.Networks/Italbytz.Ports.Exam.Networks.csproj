@@ -4,24 +4,25 @@
 		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<PackOnBuild>true</PackOnBuild>
-		<PackageVersion>0.2.0</PackageVersion>
+		<PackageVersion>0.3.0</PackageVersion>
 		<Authors>Robin Nunkesser</Authors>
 		<PackageLicenseUrl>https://github.com/Italbytz/nuget-ports-exam-networks/blob/main/LICENSE</PackageLicenseUrl>
 		<PackageProjectUrl>https://github.com/Italbytz/nuget-ports-exam-networks</PackageProjectUrl>
 		<Description>A set of helpful interfaces for exams to use with Ports and Adapters.</Description>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	  <LangVersion>8.0</LangVersion>
+		<LangVersion>9.0</LangVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-	  <LangVersion>8.0</LangVersion>
+		<LangVersion>9.0</LangVersion>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Remove="Italbytz.Ports.Exam" />
 		<None Remove="Italbytz.Ports.Graph" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Italbytz.Ports.Exam" Version="0.4.1" />
-		<PackageReference Include="Italbytz.Ports.Graph" Version="0.1.0" />
+		<PackageReference Include="Italbytz.Ports.Exam" Version="0.5.0" />
+		<PackageReference Include="Italbytz.Ports.Graph" Version="0.2.0" />
+		<PackageReference Include="Italbytz.Ports.Algorithms" Version="0.1.0" />
 	</ItemGroup>
 </Project>
